@@ -12,6 +12,5 @@ public enum Categoria {
     ERVAS_AROMATICAS_E_ESPECIARIAS,
     ARTESANAIS,
     FRUTOS_SECOS
-    
-
+   
 }
