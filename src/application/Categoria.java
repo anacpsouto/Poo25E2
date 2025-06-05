@@ -1,0 +1,17 @@
+package application;
+
+public enum Categoria {
+	FRUTA,
+    HORTALICAS,
+    CEREAIS,
+    LEGUMINOSAS,
+    RAIZES_E_TUBERCULOS,
+    PRODUTOS_LACTEOS,
+    PRODUTOS_APICOLAS,
+    OVOS,
+    ERVAS_AROMATICAS_E_ESPECIARIAS,
+    ARTESANAIS,
+    FRUTOS_SECOS
+    
+
+}
