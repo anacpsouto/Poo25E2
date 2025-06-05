@@ -81,6 +81,4 @@ public class Produto {
 				+ categoria + "]";
 	}
 	
-	
-
 }
