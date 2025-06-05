@@ -80,5 +80,4 @@ public class Produto {
 		return "Produto [idProduto=" + idProduto + ", nome=" + nome + ", unMedida=" + unMedida + ", categoria="
 				+ categoria + "]";
 	}
-	
 }
