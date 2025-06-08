@@ -7,7 +7,6 @@ package application;
 public class Publicacao {
 	private String conteudo;
 	private Categoria categoria;
-
 	/**
 	 * Construtor da classe Publicacao.
 	 * @param conteudo Texto da publicação.
