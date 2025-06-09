@@ -8,7 +8,7 @@ public class ProdAgricultor {
 	private Double preco;
 	private int stock;
 	/**
-	 * Construtor completo.
+	 * 	 * Construtor completo.
 	 * @param produto Produto de origem
 	 * @param preco Preço atribuído pelo agricultor
 	 * @param stock Quantidade disponível em stock

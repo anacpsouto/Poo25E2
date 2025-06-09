@@ -1,40 +1,41 @@
 package application;
 
 /**
- * Representa uma publicação sobre técnicas de cultivo sustentável,
- * criada por um agricultor.
+ * Representa uma publicação educativa feita por um agricultor,
+ * com uma categoria associada.
  */
 public class Publicacao {
-	private String conteudo;
-	private Categoria categoria;
-	/**
-	 * Construtor da classe Publicacao.
-	 * @param conteudo Texto da publicação.
-	 * @param categoria Categoria da publicação (ex: compostagem, adubação, etc.).
-	 */
-	public Publicacao(String conteudo, Categoria categoria) {
-		this.conteudo = conteudo;
-		this.categoria = categoria;
-	}
+    private String conteudo;
+    private Categoria categoria;
 
-	public String getConteudo() {
-		return conteudo;
-	}
+    /**
+     * Construtor da publicação.
+     * @param conteudo Texto informativo.
+     * @param categoria Categoria do conteúdo.
+     */
+    public Publicacao(String conteudo, Categoria categoria) {
+        this.conteudo = conteudo;
+        this.categoria = categoria;
+    }
 
-	public void setConteudo(String conteudo) {
-		this.conteudo = conteudo;
-	}
+    public String getConteudo() {
+        return conteudo;
+    }
 
-	public Categoria getCategoria() {
-		return categoria;
-	}
+    public void setConteudo(String conteudo) {
+        this.conteudo = conteudo;
+    }
 
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
-	}
+    public Categoria getCategoria() {
+        return categoria;
+    }
 
-	@Override
-	public String toString() {
-		return "[" + categoria + "] " + conteudo;
-	}
+    public void setCategoria(Categoria categoria) {
+        this.categoria = categoria;
+    }
+
+    @Override
+    public String toString() {
+        return "[" + categoria + "] " + conteudo;
+    }
 }
