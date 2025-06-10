@@ -15,8 +15,7 @@ public class Cliente extends Utilizador{
 	private int telemovel;
 	private int nif;
 	private ArrayList<Encomenda> encomendas;
-	private ArrayList<String> historicoCompras;
-	
+
 	/**
 	 * Construtor da classe Cliente.
 	 * 
@@ -33,7 +32,6 @@ public class Cliente extends Utilizador{
 		this.telemovel = telemovel;
 		this.nif = nif;
 		this.encomendas = new ArrayList<>();
-		this.historicoCompras = new ArrayList<>();
 	}
 
 
@@ -62,60 +60,25 @@ public class Cliente extends Utilizador{
 		return nif;
 	}
 
+	
+	public void setNif(int nif) {
+		this.nif = nif;
+	}
+	
+	
 	public ArrayList<Encomenda> getEncomendas() {
 		return encomendas;
 	}
-	
-	/**
-	 * Método para editar o perfil do cliente.
-	 * Permite atualização seletiva dos dados pessoais se os valores forem válidos.
-	 * 
-	 * @param novoNome Novo nome
-	 * @param novoEmail Novo email (deve conter "@")
-	 * @param novaPassword Nova senha (mínimo 8 caracteres)
-	 * @param novaMorada Nova morada
-	 * @param novoTelemovel Novo número de telemóvel
-	 * @param novoNif Novo NIF
-	 */
-	public void editarPerfil(String novoNome, String novoEmail, String novaPassword, String novaMorada, Integer novoTelemovel, Integer novoNif) {
-	    if (novoNome != null && !novoNome.isEmpty()) {
-	        this.setNome(novoNome);
-	    }
-	    if (novoEmail != null && novoEmail.contains("@")) {
-	        this.setEmail(novoEmail);
-	    }
-	    if (novaPassword != null && novaPassword.length() >= 8) {
-	        this.setPassword(novaPassword);
-	    }
-	    if (novaMorada != null && !novaMorada.isEmpty()) {
-	        this.morada = novaMorada;
-	    }
-	    if (novoTelemovel != null) {
-	        this.telemovel = novoTelemovel;
-	    }
-	    if (novoNif != null) {
-	        this.nif = novoNif;
-	    }
-	}
 
 	
-/**
- * Método para adicionar uma compra ao hitórico do cliente 
- * @param compra
- */
-	 public void adicionarCompraAoHistorico(String compra) {
-	     historicoCompras.add(compra);
-	 }
-	 
-	 /**
-		 * Retorna a lista de compras realizadas pelo cliente.
-		 * 
-		 * @return Histórico de compras
-		 */
+public void incluirEncomendaCliente(Encomenda  encomenda) {
+	this.encomendas.add(encomenda);
+	
+}
 
-	    public ArrayList<String> getHistoricoCompras() {
-	        return historicoCompras;
-	    }
-
+@Override
+public String toString() {
+	return "Cliente [morada=" + morada + ", telemovel=" + telemovel + ", nif=" + nif + "]";
+}
 
 }//Fim class

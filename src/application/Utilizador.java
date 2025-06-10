@@ -46,24 +46,5 @@ public class Utilizador {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	/**
-	 * Método para realizar login do utilizador.
-	 * Verifica se o email e senha coincidem com os dados armazenados.
-	 * 
-	 * @param email Email informado pelo utilizador
-	 * @param senha Senha informada pelo utilizador
-	 * @return Mensagem indicando o sucesso ou erro do login
-	 */
-	 public String login(String email, String senha) {
-		    if (!this.email.equals(email)) {
-		        return "Email não encontrado.";
-		    }
-		    if (!this.password.equals(senha)) {
-		        return "Senha incorreta.";
-		    }
-		    return "Login bem-sucedido!";
-		}
-
 
 }//Fim class
