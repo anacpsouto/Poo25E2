@@ -6,77 +6,79 @@ package application;
 import java.util.ArrayList;
 
 /**
- * 
+ * Classe que representa um Cliente do sistema.
+ * Herda de Utilizador e adiciona informações como morada, NIF e histórico de compras.
  */
+
 public class Cliente extends Utilizador{
 	private String morada;
 	private int telemovel;
 	private int nif;
-	private ArrayList<Encomenda>encomendas;
-	
+	private ArrayList<Encomenda> encomendas;
 
 	/**
-	 * @param nome
-	 * @param email
-	 * @param password
-	 * @param morada
-	 * @param telemovel
-	 * @param nif
+	 * Construtor da classe Cliente.
+	 * 
+	 * @param nome Nome do cliente
+	 * @param email Email do cliente
+	 * @param password Senha do cliente
+	 * @param morada Endereço do cliente
+	 * @param telemovel Número de telemóvel
+	 * @param nif Número de identificação fiscal
 	 */
 	public Cliente(String nome, String email, String password, String morada, int telemovel, int nif) {
 		super(nome, email, password);
 		this.morada = morada;
 		this.telemovel = telemovel;
 		this.nif = nif;
-		encomendas = new ArrayList<>();
+		this.encomendas = new ArrayList<>();
 	}
 
 
-	/**
-	 * @return the morada
-	 */
 	public String getMorada() {
 		return morada;
 	}
 
 
-	/**
-	 * @param morada the morada to set
-	 */
 	public void setMorada(String morada) {
 		this.morada = morada;
 	}
 
 
-	/**
-	 * @return the telemovel
-	 */
 	public int getTelemovel() {
 		return telemovel;
 	}
 
 
-	/**
-	 * @param telemovel the telemovel to set
-	 */
 	public void setTelemovel(int telemovel) {
 		this.telemovel = telemovel;
 	}
 
 
-	/**
-	 * @return the nif
-	 */
+	
 	public int getNif() {
 		return nif;
 	}
 
-	/**
-	 * @return the encomendas
-	 */
+	
+	public void setNif(int nif) {
+		this.nif = nif;
+	}
+	
+	
 	public ArrayList<Encomenda> getEncomendas() {
 		return encomendas;
 	}
-	
 
+	
+public void incluirEncomendaCliente(Encomenda  encomenda) {
+	this.encomendas.add(encomenda);
+	
 }
+
+@Override
+public String toString() {
+	return "Cliente [morada=" + morada + ", telemovel=" + telemovel + ", nif=" + nif + "]";
+}
+
+}//Fim class
