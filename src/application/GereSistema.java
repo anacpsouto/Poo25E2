@@ -335,6 +335,10 @@ public class GereSistema {
 		ag4.getListaProdAgricultor().add(new ProdAgricultor(p1, 0.50, 25));
 		ag4.getListaProdAgricultor().add(new ProdAgricultor(p3, 2.00, 25));
 		ag4.getListaProdAgricultor().add(new ProdAgricultor(p4, 2.00, 25));
+		
+		//Agricultor ag5 
+		ag5.getListaProdAgricultor().add(new ProdAgricultor(p2, 5.50, 45));
+		ag5.getListaProdAgricultor().add(new ProdAgricultor(p4, 2.50, 35));
 
 		// ... outros produtos para outros agricultores
 	}
