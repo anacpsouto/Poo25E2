@@ -29,3 +29,28 @@ vende pouco porque não alcança os consumidores, assim, não aumenta sua renda,
 não investe em novas práticas ou tecnologias e acaba produzindo de forma menos
 eficiente ou até mesmo insustentável. O consumidor, por sua vez, continua comprando
 produtos industrializados e não apoia a produção local. 
+
+# Benefício (como a aplicação vai contribuir para atingir a(s) metas(s) desse ODS):
+
+O apoio aos pequenos agricultores através da aplicação como intermediário pode ser
+uma solução, ainda que indireta, para atingir as metas 2.3 e 2.4 do ODS 2 e as metas 12.2
+e 12.8 da ODS 12 das seguintes formas:
+
+• Promovendo práticas agrícolas sustentáveis através do fornecimento de
+informações sobre técnicas de cultivo sustentável, e na mesma linha, contribuindo
+para a capacitação e para o conhecimento, já que o sistema incentivará os
+agricultores a optarem por métodos que utilizam os recursos naturais de maneira
+mais eficiente, reduzindo o uso excessivo de água, pesticidas, fertilizantes, entre
+outros insumos químicos.
+
+• Facilitando a conexão entre os pequenos agricultores, consumidores finais e
+mercados locais, aumentando consequentemente as oportunidades de vendas e
+o rendimento dos pequenos produtores agrícolas.
+Contribuindo para a redução do desperdício pós-colheita, ao permitir que os
+agricultores anunciem rapidamente os seus produtos disponíveis, garantindo que
+uma maior parte da colheita seja comercializada antes do fim da validade. Desta
+forma, evita-se a perda de produtos frescos e melhora-se o aproveitamento da
+produção.
+
+• Pode ser uma plataforma útil para promover a gestão sustentável da produção e
+auxiliar no planeamento das colheitas.
