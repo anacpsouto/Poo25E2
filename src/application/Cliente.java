@@ -70,6 +70,15 @@ public class Cliente extends Utilizador{
 	public int getNif() {
 		return nif;
 	}
+	
+
+	/**
+	 * @param nif the nif to set
+	 */
+	public void setNif(int nif) {
+		this.nif = nif;
+	}
+
 
 	/**
 	 * @return the encomendas
@@ -78,5 +87,29 @@ public class Cliente extends Utilizador{
 		return encomendas;
 	}
 	
+	@Override
+	public String toString() {
+	    StringBuilder sb = new StringBuilder();
+	    sb.append("\n=== CLIENTE ===\n");
+	    sb.append("Nome: ").append(getNome()).append("\n");
+	    sb.append("Email: ").append(getEmail()).append("\n");
+	    sb.append("Morada: ").append(morada).append("\n");
+	    sb.append("Telemóvel: ").append(telemovel).append("\n");
+	    sb.append("NIF: ").append(nif).append("\n");
+
+	    sb.append("\n=== ENCOMENDAS REALIZADAS ===\n");
+	    if (encomendas.isEmpty()) {
+	        sb.append("Nenhuma encomenda realizada.\n");
+	    } else {
+	        for (Encomenda e : encomendas) {
+	            sb.append("- Encomenda com o agricultor: ").append(e.getAgricultor().getNome())
+	              .append(" | Data: ").append(e.getData())
+	              .append(" | Estado: ").append(e.getEstado())
+	              .append(" | Produtos: ").append(e.getListaProdEncomenda().size()).append("\n");
+	        }
+	    }
+
+	    return sb.toString();
+	}
 
 }

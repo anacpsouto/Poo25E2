@@ -45,6 +45,6 @@ public class ProdAgricultor {
 
 	@Override
 	public String toString() {
-		return "Produto: " + produto.getNome() + ", Preço: " + preco + "€, Stock: " + stock;
+		return "\nProduto: " + produto.getNome() + "\nPreço: " + preco + "€" + "\nStock: " + stock;
 	}
 }
