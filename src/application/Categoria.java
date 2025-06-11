@@ -11,7 +11,12 @@ public enum Categoria {
     OVOS,
     ERVAS_AROMATICAS_E_ESPECIARIAS,
     ARTESANAIS,
-    FRUTOS_SECOS
+    FRUTOS_SECOS,
+    COMPOSTAGEM,
+    ADUBACAO_ORGANICA,
+    ROTACAO_DE_CULTURA,
+    ARMAZENAMENTO,
     
-
+    
+   
 }
